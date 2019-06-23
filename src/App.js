@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import ali from './logo.svg';
 import './App.css';
+import Header from './components/header';
+import {Veiw,Paragraph} from './components/Veiw';
+import Functional from './components/Functional';
+import State from './components/State'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Header />
+    <Veiw />
+    <Paragraph />
+    <Functional />
+    <State />
     </div>
   );
 }
+
 
 export default App;
