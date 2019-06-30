@@ -5,15 +5,17 @@ import Header from './components/header';
 import {Veiw,Paragraph} from './components/Veiw';
 import Functional from './components/Functional';
 import State from './components/State'
+import Card from './components/Card';
 
 function App() {
   return (
     <div>
-    <Header />
+    {/* <Header />
     <Veiw />
     <Paragraph />
     <Functional />
-    <State />
+    <State /> */}
+    <Card />
     </div>
   );
 }
