@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [0630/003502.007:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0630/003502.008:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0630/003502.009:ERROR:crash_report_database_win.cc(469)] failed to stat report
@@ -64,3 +65,11 @@
 [0630/023502.079:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0630/023502.080:ERROR:crash_report_database_win.cc(469)] failed to stat report
 [0630/023502.081:ERROR:crash_report_database_win.cc(469)] failed to stat report
+=======
+[0626/080641.082:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0626/080641.085:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0626/080641.086:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0627/095707.330:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0627/095707.331:ERROR:crash_report_database_win.cc(469)] failed to stat report
+[0627/095707.332:ERROR:crash_report_database_win.cc(469)] failed to stat report
+>>>>>>> feature
