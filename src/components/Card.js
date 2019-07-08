@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {CardComponent} from './cardComponent';
 
 export default class Card extends Component {
 
@@ -6,7 +7,30 @@ export default class Card extends Component {
         Name:"",
         Class:"",
         Roll:"",
-        students:[]
+        students:[],
+        Loading:true
+    }
+
+    componentDidMount(){
+        console.log("component did mount")
+        // this.state.students.push({Name:"ali",class:"bravo",roll:23})
+
+    //    fetch("http://dummy.restapiexample.com/api/v1/employee/1")
+    //     .then((data) => {data.json()})
+    //     .then((dataJson) => console.log(dataJson))
+    //     .catch(e => console.log(e))
+
+    // setInterval(() => {
+    //     this.setState({Loading:!this.state.Loading})
+    // },1000)
+
+    setTimeout(() => {
+        this.setState({Loading:false})
+    }, 3000);
+    }
+
+    componentDidUpdate(){
+        console.log("component did update")
     }
 
     submitForm = () => {
@@ -20,13 +44,20 @@ export default class Card extends Component {
 
         console.log(this.state.students)
 
-    } 
+    }
+    
+    componentWillMount(){
+        console.log("component will mount")
+    }
 
     render() {
+        console.log("render")
         return (
             <div style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
-                {/* <form onSubmit={this.submitForm} style={{display:"flex",flexDirection:"column",}}> */}
-                <input name="Name" onChange={(val) => {
+               {
+                  this.state.Loading == true ? <p>Loading</p> :
+                  <div>
+                  <input name="Name" onChange={(val) => {
                     this.setState({
                         Name:val.target.value
                     })
@@ -43,29 +74,10 @@ export default class Card extends Component {
                         Roll:val.target.value
                     })
                 }} value={this.state.Roll} />
-                <input type="submit" onClick={this.submitForm} />
-                {/* </form> */}
-
-
-               
-
-                {this.state.students.map((item,i) => (
-                    <div key={i} style={{marginTop:100,}}>
-                        <div style={{display:"flex"}}>
-                            <p>Name :- </p>
-                            <p> {item.Name}</p>
-                        </div>
-                        <div style={{display:"flex",marginTop:10}}>
-                            <p>Class :- </p>
-                            <p> {item.Class}</p>
-                        </div>
-                        <div style={{display:"flex",marginTop:10}}>
-                            <p>Roll :- </p>
-                            <p> {item.RollNo}</p>
-                     </div>
-                    </div>
-                    
-                ))}
+                <input type="submit" onClick={this.submitForm}/> 
+                </div>
+               }
+                
             </div>
         )
     }
