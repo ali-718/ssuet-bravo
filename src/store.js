@@ -2,7 +2,6 @@ import {createStore,compose,applyMiddleware} from 'redux'
 import Reducers from './reducer/index';
 import thunk from 'redux-thunk';
 
-
 const middleware = [thunk]
 const initialState = {};
 
