@@ -57,24 +57,24 @@ export default class Card extends Component {
                {
                   this.state.Loading == true ? <p>Loading</p> :
                   <div>
-                  <input name="Name" onChange={(val) => {
-                    this.setState({
-                        Name:val.target.value
-                    })
-                }} value={this.state.Name} />
+                    <input name="Name" onChange={(val) => {
+                        this.setState({
+                            Name:val.target.value
+                        })
+                    }} value={this.state.Name} />
 
-                  <input name="Class" onChange={(val) => {
-                     this.setState({
-                        Class:val.target.value
-                    })
-                }} value={this.state.Class} />
+                    <input name="Class" onChange={(val) => {
+                        this.setState({
+                            Class:val.target.value
+                        })
+                    }} value={this.state.Class} />
 
-                    <input name="Roll" onChange={(val) => {
-                     this.setState({
-                        Roll:val.target.value
-                    })
-                }} value={this.state.Roll} />
-                <input type="submit" onClick={this.submitForm}/> 
+                        <input name="Roll" onChange={(val) => {
+                        this.setState({
+                            Roll:val.target.value
+                        })
+                    }} value={this.state.Roll} />
+                    <input type="submit" onClick={this.submitForm}/> 
                 </div>
                }
                 
@@ -82,3 +82,14 @@ export default class Card extends Component {
         )
     }
 }
+
+// var data = {
+//     name:"ali",
+//     greeting: () => {
+//         return this.name
+//     }
+// }
+
+// const getName = data.greeting.bind(data)
+
+// console.log(getName())
