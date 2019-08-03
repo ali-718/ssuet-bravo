@@ -12,11 +12,11 @@ export const LoginUser = (Email, Password, history) => dispatch => {
   history.push("/about/name");
 };
 
-const array = [1, 2, 3, 4];
-let name = "ali haider";
+// const array = [1, 2, 3, 4];
+// let name = "ali haider";
 
-name[0] = "m";
+// name[0] = "m";
 
-const name = (Name = "Anonymous") => {
-  var Name = "ali";
-};
+// const name = (Name = "Anonymous") => {
+//   var Name = "ali";
+// };
